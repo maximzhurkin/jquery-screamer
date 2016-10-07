@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="dist/demo.min.css">
+	<link rel="stylesheet" href="dist/screamer.jquery.min.css">
+	<link rel="stylesheet" href="dist/screamer.theme.min.css">
+</head>
+<body>
+
+	<header>
+		<div class="wrapper">
+			<h1>Screamer</h1>
+			<p>Very simple jQuery plugin for custom alerts</p>
+			<a href="#" class="button">Download plugin</a>
+		</div>
+	</header>
+	<section class="section section-demo">
+		<div class="wrapper">
+			<ul class="buttons group">
+				<li><a class="button" href="#" id="alert">Default</a></li>
+				<li><a class="button" href="#" id="alert-overlay-close">Click overlay for close</a></li>
+				<li><a class="button" href="#" id="alert-buttons">Custom button text</a></li>
+				<li><a class="button" href="#" id="alert-title">With title</a></li>
+			</ul>
+		</div>
+	</section>
+	<section class="section section-code">
+		<div class="wrapper">
+			<p>1. Include styles</p>
+			<code>
+				&lt;link rel="stylesheet" href="screamer.jquery.min.css"&#62;<br>
+				&lt;link rel="stylesheet" href="screamer.theme.min.css"&#62;
+			</code>
+			<p>2. Include jQuery and Screamer</p>
+			<code>
+				&lt;script src="jquery.min.js"&#62;&lt;/script&#62;<br>
+				&lt;script src="screamer.jquery.min.js"&#62;&lt;/script&#62;
+			</code>
+			<p>3. Call Screamer</p>
+			<code>
+				$('#alert').click(function(){
+					$().screamer({
+						message: 'Its default alert'
+					});
+				});
+			</code>
+		</div>
+	</section>
+	<section class="section section-theme">
+		<div class="wrapper">
+			<ul class="buttons group">
+				<li><a class="button button-blue" href="#" id="alert-blue">Default</a></li>
+				<li><a class="button button-green" href="#" id="alert-green">Click overlay for close</a></li>
+				<li><a class="button button-orange" href="#" id="alert-orange">Custom button text</a></li>
+				<li><a class="button button-red" href="#" id="alert-red">With title</a></li>
+			</ul>
+		</div>
+	</section>
+	<footer>
+		<div class="wrapper">
+			<span>Max Zhurkin</span>,
+			<a href="https://github.com/maximzhurkin/">github</a>,
+			<a href="https://twitter.com/maximzhurkin">twitter</a>
+		</div>
+	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="dist/screamer.jquery.min.js"></script>
+
+	<script>
+		
+	$('#alert').click(function(){
+		$().screamer({
+			message: 'Its default alert'
+		});
+		return false;
+	});
+
+	$('#alert-overlay-close').click(function(){
+		$().screamer({
+			message: 'Close alert on click overlay',
+			overlayClose: true
+		});
+		return false;
+	});
+
+	$('#alert-buttons').click(function(){
+		$().screamer({
+			message: 'Custom button text',
+			button: 'screamer!'
+		});
+		return false;
+	});
+
+	$('#alert-title').click(function(){
+		$().screamer({
+			title: 'Screamer',
+			message: 'Alert with title'
+		});
+		return false;
+	});
+
+	$('#alert-blue').click(function(){
+		$().screamer({
+			title: 'Message',
+			message: 'Blue style message',
+			theme: 'screamer-blue',
+			overlayClose: true
+		});
+		return false;
+	});
+
+	$('#alert-green').click(function(){
+		$().screamer({
+			title: 'Message',
+			message: 'Green style message',
+			theme: 'screamer-green',
+			overlayClose: true
+		});
+		return false;
+	});
+
+	$('#alert-orange').click(function(){
+		$().screamer({
+			title: 'Message',
+			message: 'Orange style message',
+			theme: 'screamer-orange',
+			overlayClose: true
+		});
+		return false;
+	});
+
+	$('#alert-red').click(function(){
+		$().screamer({
+			title: 'Message',
+			message: 'Red style message',
+			theme: 'screamer-red',
+			overlayClose: true
+		});
+		return false;
+	});
+
+	</script>
+
+</body>
+</html>

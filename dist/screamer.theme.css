@@ -1,0 +1,65 @@
+.screamer.screamer-blue .screamer-box-wrapper .screamer-box,
+.screamer.screamer-green .screamer-box-wrapper .screamer-box,
+.screamer.screamer-orange .screamer-box-wrapper .screamer-box,
+.screamer.screamer-red .screamer-box-wrapper .screamer-box {
+  padding: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.screamer.screamer-blue .screamer-box-wrapper .screamer-box .screamer-box-title,
+.screamer.screamer-green .screamer-box-wrapper .screamer-box .screamer-box-title,
+.screamer.screamer-orange .screamer-box-wrapper .screamer-box .screamer-box-title,
+.screamer.screamer-red .screamer-box-wrapper .screamer-box .screamer-box-title {
+  color: #fff;
+}
+.screamer.screamer-blue .screamer-box-wrapper .screamer-box .screamer-box-main,
+.screamer.screamer-green .screamer-box-wrapper .screamer-box .screamer-box-main,
+.screamer.screamer-orange .screamer-box-wrapper .screamer-box .screamer-box-main,
+.screamer.screamer-red .screamer-box-wrapper .screamer-box .screamer-box-main {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.screamer.screamer-blue .screamer-box-wrapper .screamer-box .screamer-box-main .screamer-box-buttons .screamer-box-button,
+.screamer.screamer-green .screamer-box-wrapper .screamer-box .screamer-box-main .screamer-box-buttons .screamer-box-button,
+.screamer.screamer-orange .screamer-box-wrapper .screamer-box .screamer-box-main .screamer-box-buttons .screamer-box-button,
+.screamer.screamer-red .screamer-box-wrapper .screamer-box .screamer-box-main .screamer-box-buttons .screamer-box-button {
+  color: #fff;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+.screamer.screamer-blue .screamer-box-wrapper .screamer-box {
+  background-color: #2980b9;
+}
+.screamer.screamer-blue .screamer-box-wrapper .screamer-box .screamer-box-title {
+  background-color: #2980b9;
+}
+.screamer.screamer-blue .screamer-box-wrapper .screamer-box .screamer-box-main .screamer-box-buttons .screamer-box-button {
+  background-color: #2980b9;
+}
+.screamer.screamer-green .screamer-box-wrapper .screamer-box {
+  background-color: #27ae60;
+}
+.screamer.screamer-green .screamer-box-wrapper .screamer-box .screamer-box-title {
+  background-color: #27ae60;
+}
+.screamer.screamer-green .screamer-box-wrapper .screamer-box .screamer-box-main .screamer-box-buttons .screamer-box-button {
+  background-color: #27ae60;
+}
+.screamer.screamer-orange .screamer-box-wrapper .screamer-box {
+  background-color: #d35400;
+}
+.screamer.screamer-orange .screamer-box-wrapper .screamer-box .screamer-box-title {
+  background-color: #d35400;
+}
+.screamer.screamer-orange .screamer-box-wrapper .screamer-box .screamer-box-main .screamer-box-buttons .screamer-box-button {
+  background-color: #d35400;
+}
+.screamer.screamer-red .screamer-box-wrapper .screamer-box {
+  background-color: #c0392b;
+}
+.screamer.screamer-red .screamer-box-wrapper .screamer-box .screamer-box-title {
+  background-color: #c0392b;
+}
+.screamer.screamer-red .screamer-box-wrapper .screamer-box .screamer-box-main .screamer-box-buttons .screamer-box-button {
+  background-color: #c0392b;
+}
