@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Screamer jQuery plugin for custom alerts</title>
 	<link rel="stylesheet" href="dist/demo.min.css">
 	<link rel="stylesheet" href="dist/screamer.jquery.min.css">
 	<link rel="stylesheet" href="dist/screamer.theme.min.css">
@@ -13,7 +13,7 @@
 		<div class="wrapper">
 			<h1>Screamer</h1>
 			<p>Very simple jQuery plugin for custom alerts</p>
-			<a href="#" class="button">Download plugin</a>
+			<a href="https://github.com/maximzhurkin/jquery-screamer/archive/master.zip" class="button">Download plugin</a>
 		</div>
 	</header>
 	<section class="section section-demo">
@@ -51,11 +51,27 @@
 	<section class="section section-theme">
 		<div class="wrapper">
 			<ul class="buttons group">
-				<li><a class="button button-blue" href="#" id="alert-blue">Default</a></li>
-				<li><a class="button button-green" href="#" id="alert-green">Click overlay for close</a></li>
-				<li><a class="button button-orange" href="#" id="alert-orange">Custom button text</a></li>
-				<li><a class="button button-red" href="#" id="alert-red">With title</a></li>
+				<li><a class="button button-blue" href="#" id="alert-blue">Blue</a></li>
+				<li><a class="button button-green" href="#" id="alert-green">Green</a></li>
+				<li><a class="button button-orange" href="#" id="alert-orange">Orange</a></li>
+				<li><a class="button button-red" href="#" id="alert-red">Red</a></li>
 			</ul>
+		</div>
+	</section>
+	<section class="section section-code">
+		<div class="wrapper">
+			<p>All params</p>
+			<code>
+				$('#alert').click(function(){<br>
+				&thinsp;&thinsp;$().screamer({<br>
+				&thinsp;&thinsp;&thinsp;&thinsp;title: 'Message',<br>
+				&thinsp;&thinsp;&thinsp;&thinsp;message: 'Its default alert',<br>
+				&thinsp;&thinsp;&thinsp;&thinsp;button: 'Okay',<br>
+				&thinsp;&thinsp;&thinsp;&thinsp;overlayClose: true,<br>
+				&thinsp;&thinsp;&thinsp;&thinsp;theme: 'screamer-blue',<br>
+				&thinsp;&thinsp;});<br>
+				});
+			</code>
 		</div>
 	</section>
 	<footer>
@@ -89,7 +105,8 @@
 	$('#alert-buttons').click(function(){
 		$().screamer({
 			message: 'Custom button text',
-			button: 'screamer!'
+			button: 'screamer!',
+			overlayClose: true
 		});
 		return false;
 	});
@@ -97,7 +114,8 @@
 	$('#alert-title').click(function(){
 		$().screamer({
 			title: 'Screamer',
-			message: 'Alert with title'
+			message: 'Alert with title',
+			overlayClose: true
 		});
 		return false;
 	});
