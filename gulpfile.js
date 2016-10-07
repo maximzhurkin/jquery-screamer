@@ -54,7 +54,10 @@ gulp.task('css', function(){
 			cascade: false
 		}))
 		.pipe(gulp.dest('dist/'))
-		.pipe(cssnano({reduceIdents: false}))
+		.pipe(cssnano({
+			reduceIdents: false,
+			zindex: false
+		}))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(sourcemaps.write('.'))
 		.pipe(gulp.dest('dist/'))
