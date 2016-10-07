@@ -6,6 +6,7 @@
   bottom: 0;
   text-align: center;
   background-color: rgba(0,0,0,0.7);
+  z-index: 999999999;
   -webkit-animation: animScreamerOverlay 0.3s 1 alternate;
   -moz-animation: animScreamerOverlay 0.3s 1 alternate;
   animation: animScreamerOverlay 0.3s 1 alternate;
@@ -51,6 +52,10 @@
   font-size: 1em;
   color: #000;
   background-color: #ddd;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 @-moz-keyframes animScreamerBox {
   from {
