@@ -55,7 +55,7 @@ header .button {
   width: 960px;
 }
 .section .buttons li {
-  padding: 0 10px;
+  padding: 10px;
   width: 25%;
   float: left;
   list-style: none;
@@ -122,4 +122,34 @@ footer a {
   color: #ecf0f1;
   text-decoration: none;
   border-bottom: 1px solid rgba(236,240,241,0.5);
+}
+@media screen and (max-width: 960px) {
+  body {
+    min-width: 320px;
+  }
+  header .wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .section .wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .section .buttons li {
+    width: 50%;
+  }
+  footer .wrapper {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section .wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .section .buttons li {
+    width: 100%;
+    float: none;
+  }
 }
