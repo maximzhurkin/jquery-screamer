@@ -21,7 +21,7 @@
   text-align: left;
   display: inline-block;
 }
-.screamer .screamer-box-wrapper .screamer-box {
+.screamer .screamer-box {
   margin: 0 auto;
   width: 280px;
   background-color: #fff;
@@ -29,23 +29,25 @@
   -moz-animation: animScreamerBox 0.3s 1 alternate;
   animation: animScreamerBox 0.3s 1 alternate;
 }
-.screamer .screamer-box-wrapper .screamer-box .screamer-box-title {
+.screamer .screamer-box-title,
+.screamer .screamer-box-main {
   padding: 10px;
+}
+.screamer .screamer-box-title {
   color: #000;
   background-color: #ddd;
 }
-.screamer .screamer-box-wrapper .screamer-box .screamer-box-main {
-  padding: 10px;
+.screamer .screamer-box-main {
   background-color: #fff;
 }
-.screamer .screamer-box-wrapper .screamer-box .screamer-box-main .screamer-box-message {
+.screamer .screamer-box-message {
   font-size: 1em;
 }
-.screamer .screamer-box-wrapper .screamer-box .screamer-box-main .screamer-box-buttons {
+.screamer .screamer-box-buttons {
   padding-top: 10px;
   text-align: right;
 }
-.screamer .screamer-box-wrapper .screamer-box .screamer-box-main .screamer-box-buttons .screamer-box-button {
+.screamer .screamer-box-button {
   padding: 5px 10px;
   cursor: pointer;
   display: inline-block;

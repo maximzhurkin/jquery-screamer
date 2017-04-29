@@ -3,59 +3,37 @@ color_green = #27ae60
 color_orange = #d35400
 color_red = #c0392b
 
-.screamer.screamer-blue,
-.screamer.screamer-green,
-.screamer.screamer-orange,
-.screamer.screamer-red
-	.screamer-box-wrapper
+.screamer
+	&.screamer-blue,
+	&.screamer-green,
+	&.screamer-orange,
+	&.screamer-red
+		.screamer-box,
+		.screamer-box-main,
+		.screamer-box-button
+			border-radius 6px
 		.screamer-box
 			padding 6px
-			border-radius 6px
-			.screamer-box-title
-				color #fff
-			.screamer-box-main
-				border-radius 6px
-				.screamer-box-buttons
-					.screamer-box-button
-						color #fff
-						border-radius 6px
-.screamer.screamer-blue
-	.screamer-box-wrapper
-		.screamer-box
-			background-color color_blue
-			.screamer-box-title
-				background-color color_blue
-			.screamer-box-main
-				.screamer-box-buttons
-					.screamer-box-button
-						background-color color_blue
-.screamer.screamer-green
-	.screamer-box-wrapper
-		.screamer-box
-			background-color color_green
-			.screamer-box-title
-				background-color color_green
-			.screamer-box-main
-				.screamer-box-buttons
-					.screamer-box-button
-						background-color color_green
-.screamer.screamer-orange
-	.screamer-box-wrapper
-		.screamer-box
-			background-color color_orange
-			.screamer-box-title
-				background-color color_orange
-			.screamer-box-main
-				.screamer-box-buttons
-					.screamer-box-button
-						background-color color_orange
-.screamer.screamer-red
-	.screamer-box-wrapper
-		.screamer-box
-			background-color color_red
-			.screamer-box-title
-				background-color color_red
-			.screamer-box-main
-				.screamer-box-buttons
-					.screamer-box-button
-						background-color color_red
+		.screamer-box-title,
+		.screamer-box-button
+			color #fff
+.screamer-blue
+	.screamer-box,
+	.screamer-box-title,
+	.screamer-box-button
+		background-color color_blue
+.screamer-green
+	.screamer-box,
+	.screamer-box-title,
+	.screamer-box-button
+		background-color color_green
+.screamer-orange
+	.screamer-box,
+	.screamer-box-title,
+	.screamer-box-button
+		background-color color_orange
+.screamer-red
+	.screamer-box,
+	.screamer-box-title,
+	.screamer-box-button
+		background-color color_red
